@@ -3,7 +3,8 @@ def call(Map config=[:], Closure body) {
         git url: "https://github.com/werne2j/sample-nodejs"        
         stage("Install") {
             sh "npm install"
-        }        stage("Test") {
+        }        
+        stage("Test") {
             sh "npm test"
         }        
         stage("Deploy") {
